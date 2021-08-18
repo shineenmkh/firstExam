@@ -12,6 +12,17 @@ const path = require("path");
             path:path.resolve(__dirname, "./docs")
         },
         mode:"development",
-        watch:true
+        watch:true,
+        module:{
+            rules:[
+                {
+                    test:/\.css$/i,
+                    use:[
+                        'style-loader',
+                        'css-loader'
+                    ]
+                }
+            ]
+        }
     }
 }

@@ -1,1 +1,2 @@
-alert("test hiij baina");
+import '../styles/styles.css';
+
